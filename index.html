@@ -143,10 +143,10 @@
     import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
 
     // COLE AQUI AS CHAVES DO SEU PROJETO SUPABASE
-    const SUPABASE_URL = 'https://qxjrsdzyaicisokgzhh.supabase.co'
-    const SUPABASE_ANON_KEY = 'sb_publishable_afVxjk13wkMiovhLgzHrbQ_WyXTqQxj'
+    const SUPABASE_URL = "https://qxjrsdzyaicisokgzhh.supabase.co";
+    const SUPABASE_ANON_KEY = "sb_publishable_afVxjk13wkMiovhLgzHrbQ_WyXTqQxj"
 
-    const demoMode = SUPABASE_URL.includes('COLE_AQUI') || SUPABASE_ANON_KEY.includes('COLE_AQUI')
+    const demoMode = SUPABASE_URL.includes("https://qxjrsdzyaicisokgzhh.supabase.co") || SUPABASE_ANON_KEY.includes("sb_publishable_afVxjk13wkMiovhLgzHrbQ_WyXTqQxj")
     const supabase = !demoMode ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null
 
     const els = {
