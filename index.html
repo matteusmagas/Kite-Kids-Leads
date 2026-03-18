@@ -217,7 +217,6 @@
     }
 
     async function loadLeads(){
-      if (demoMode){
         leads = [
           {id:1, customer_name:'Maria Clara', lead_date:'2026-03-10', source:'whatsapp', keyword:'LOOK', purchased:true, sale_value:289.9, notes:'Veio do anúncio de coleção nova.'},
           {id:2, customer_name:'Juliana Alves', lead_date:'2026-03-11', source:'instagram', keyword:'KITE', purchased:false, sale_value:0, notes:'Pediu fotos e ficou de voltar.'},
@@ -279,11 +278,6 @@
 
       try {
         if (!payload.customer_name) throw new Error('Preencha o nome da cliente.')
-
-        if (demoMode) {
-          payload.id = Date.now()
-          leads.unshift(payload)
-        } else {
           const { data, error } = await supabase.from('leads').insert(payload).select().single()
           if (error) throw error
           leads.unshift(data)
