@@ -10,29 +10,103 @@
       --brand:#ef5da8; --brand2:#8b5cf6; --ok:#059669; --no:#9ca3af; --shadow:0 10px 30px rgba(15,23,42,.08);
       --radius:20px;
     }
-    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#fff 0,#f7f7fb 100%);color:var(--text)}
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:linear-gradient(180deg,#fff 0,#f7f7fb 100%);
+      color:var(--text)
+    }
     .wrap{max-width:1200px;margin:0 auto;padding:28px 18px 48px}
     .top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:20px}
-    .title h1{margin:0;font-size:32px;line-height:1.1}.title p{margin:8px 0 0;color:var(--muted)}
+    .title h1{margin:0;font-size:32px;line-height:1.1}
+    .title p{margin:8px 0 0;color:var(--muted)}
     .badge{background:#111827;color:#fff;padding:10px 14px;border-radius:999px;font-size:13px}
     .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:20px}
     .grid2{display:grid;grid-template-columns:390px 1fr;gap:16px}
     .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
-    .metric{padding:20px}.metric .label{color:var(--muted);font-size:14px}.metric .value{font-size:30px;font-weight:800;margin-top:6px}
-    .section{padding:22px}.section h2{margin:0 0 4px;font-size:22px}.section .sub{color:var(--muted);font-size:14px;margin-bottom:18px}
-    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{margin-bottom:12px}.field label{display:block;font-size:13px;font-weight:700;margin-bottom:7px}
-    .input,.select,.textarea,.search{width:100%;padding:13px 14px;border:1px solid #d7dce3;border-radius:14px;background:#fff;font-size:14px;outline:none}
-    .textarea{min-height:84px;resize:vertical}.input:focus,.select:focus,.textarea:focus,.search:focus{border-color:#c084fc;box-shadow:0 0 0 4px rgba(192,132,252,.15)}
-    .btn{width:100%;padding:14px 16px;border:none;border-radius:14px;background:linear-gradient(90deg,var(--brand),var(--brand2));color:#fff;font-weight:800;font-size:15px;cursor:pointer}
-    .btn:disabled{opacity:.7;cursor:not-allowed}.status{margin-top:10px;font-size:14px;color:var(--muted)}
+    .metric{padding:20px}
+    .metric .label{color:var(--muted);font-size:14px}
+    .metric .value{font-size:30px;font-weight:800;margin-top:6px}
+    .section{padding:22px}
+    .section h2{margin:0 0 4px;font-size:22px}
+    .section .sub{color:var(--muted);font-size:14px;margin-bottom:18px}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .field{margin-bottom:12px}
+    .field label{display:block;font-size:13px;font-weight:700;margin-bottom:7px}
+    .input,.select,.textarea,.search{
+      width:100%;
+      padding:13px 14px;
+      border:1px solid #d7dce3;
+      border-radius:14px;
+      background:#fff;
+      font-size:14px;
+      outline:none
+    }
+    .textarea{min-height:84px;resize:vertical}
+    .input:focus,.select:focus,.textarea:focus,.search:focus{
+      border-color:#c084fc;
+      box-shadow:0 0 0 4px rgba(192,132,252,.15)
+    }
+    .btn{
+      width:100%;
+      padding:14px 16px;
+      border:none;
+      border-radius:14px;
+      background:linear-gradient(90deg,var(--brand),var(--brand2));
+      color:#fff;
+      font-weight:800;
+      font-size:15px;
+      cursor:pointer
+    }
+    .btn:disabled{opacity:.7;cursor:not-allowed}
+    .status{margin-top:10px;font-size:14px;color:var(--muted)}
     .toolbar{display:grid;grid-template-columns:1fr 220px 220px;gap:10px;margin-bottom:14px}
-    table{width:100%;border-collapse:collapse} th,td{padding:12px 10px;border-top:1px solid var(--line);text-align:left;font-size:14px;vertical-align:top}
-    th{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}.pill{display:inline-block;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700}
-    .yes{background:#dcfce7;color:#166534}.no{background:#f3f4f6;color:#4b5563}.small{font-size:12px;color:var(--muted)}
-    .actions{display:flex;gap:8px;flex-wrap:wrap}.ghost{padding:10px 12px;border:1px solid var(--line);background:#fff;border-radius:12px;cursor:pointer;font-weight:700}
+    table{width:100%;border-collapse:collapse}
+    th,td{
+      padding:12px 10px;
+      border-top:1px solid var(--line);
+      text-align:left;
+      font-size:14px;
+      vertical-align:top
+    }
+    th{
+      font-size:12px;
+      color:var(--muted);
+      text-transform:uppercase;
+      letter-spacing:.04em
+    }
+    .pill{
+      display:inline-block;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:700
+    }
+    .yes{background:#dcfce7;color:#166534}
+    .no{background:#f3f4f6;color:#4b5563}
+    .small{font-size:12px;color:var(--muted)}
+    .actions{display:flex;gap:8px;flex-wrap:wrap}
+    .ghost{
+      padding:10px 12px;
+      border:1px solid var(--line);
+      background:#fff;
+      border-radius:12px;
+      cursor:pointer;
+      font-weight:700
+    }
     .footer-note{margin-top:18px;color:var(--muted);font-size:13px}
-    @media (max-width: 980px){.grid4{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}.toolbar{grid-template-columns:1fr}.title h1{font-size:28px}}
-    @media (max-width: 600px){.grid4{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.wrap{padding:18px 14px 40px}}
+    @media (max-width: 980px){
+      .grid4{grid-template-columns:repeat(2,1fr)}
+      .grid2{grid-template-columns:1fr}
+      .toolbar{grid-template-columns:1fr}
+      .title h1{font-size:28px}
+    }
+    @media (max-width: 600px){
+      .grid4{grid-template-columns:1fr}
+      .form-row{grid-template-columns:1fr}
+      .wrap{padding:18px 14px 40px}
+    }
   </style>
 </head>
 <body>
@@ -61,6 +135,7 @@
             <label>Nome da cliente</label>
             <input class="input" id="customer_name" placeholder="Ex.: Maria Clara" required />
           </div>
+
           <div class="form-row">
             <div class="field">
               <label>Data</label>
@@ -77,10 +152,12 @@
               </select>
             </div>
           </div>
+
           <div class="field">
             <label>De onde veio / Palavra-chave</label>
             <input class="input" id="keyword" placeholder="Ex.: LOOK, KITE, vitrine, indicação da Ana" />
           </div>
+
           <div class="form-row">
             <div class="field">
               <label>Comprou?</label>
@@ -94,10 +171,12 @@
               <input class="input" type="number" step="0.01" id="sale_value" placeholder="0,00" disabled />
             </div>
           </div>
+
           <div class="field">
             <label>Observações</label>
             <textarea class="textarea" id="notes" placeholder="Ex.: pediu fotos, voltou depois, comprou presente"></textarea>
           </div>
+
           <button class="btn" id="saveBtn" type="submit">Salvar lead</button>
           <div class="status" id="status"></div>
         </form>
@@ -106,6 +185,7 @@
       <div class="card section">
         <h2>Histórico</h2>
         <div class="sub">Visualização rápida dos últimos cadastros.</div>
+
         <div class="toolbar">
           <input class="search" id="search" placeholder="Buscar por nome ou palavra-chave" />
           <select class="select" id="filterSource">
@@ -118,22 +198,32 @@
           </select>
           <button class="ghost" id="exportBtn" type="button">Exportar CSV</button>
         </div>
+
         <div class="small" style="margin-bottom:10px">Filtro de período</div>
+
         <div class="toolbar" style="grid-template-columns:1fr 1fr 220px">
           <input class="input" id="dateStart" type="date" />
           <input class="input" id="dateEnd" type="date" />
           <button class="ghost" id="clearFilters" type="button">Limpar filtros</button>
         </div>
+
         <div style="overflow:auto">
           <table>
             <thead>
               <tr>
-                <th>Nome</th><th>Data</th><th>Origem</th><th>Palavra</th><th>Comprou?</th><th>Valor</th><th>Obs.</th>
+                <th>Nome</th>
+                <th>Data</th>
+                <th>Origem</th>
+                <th>Palavra</th>
+                <th>Comprou?</th>
+                <th>Valor</th>
+                <th>Obs.</th>
               </tr>
             </thead>
             <tbody id="rows"></tbody>
           </table>
         </div>
+
         <div class="footer-note">Dica: no WhatsApp, peça para a cliente mandar a palavra do anúncio. Isso melhora muito o rastreio.</div>
       </div>
     </div>
@@ -142,11 +232,10 @@
   <script type="module">
     import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
 
-    // COLE AQUI AS CHAVES DO SEU PROJETO SUPABASE
     const SUPABASE_URL = "https://qxjrsdzyaicisokgzhh.supabase.co";
-    const SUPABASE_ANON_KEY = "sb_publishable_afVxjk13wkMiovhLgzHrbQ_WyXTqQxj"
+    const SUPABASE_ANON_KEY = "sb_publishable_afVxjk13wkMiovhLgzHrbQ_WyXTqQxj";
 
-    const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+    const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
     const els = {
       form: document.getElementById('leadForm'),
@@ -170,101 +259,159 @@
       mSales: document.getElementById('mSales'),
       mRevenue: document.getElementById('mRevenue'),
       mConv: document.getElementById('mConv'),
+    };
+
+    let leads = [];
+    els.lead_date.value = new Date().toISOString().slice(0, 10);
+
+    function money(v){
+      return new Intl.NumberFormat('pt-BR', {
+        style:'currency',
+        currency:'BRL'
+      }).format(Number(v || 0));
     }
 
-    let leads = []
-    els.lead_date.value = new Date().toISOString().slice(0, 10)
+    function sourceLabel(v){
+      return ({
+        whatsapp:'WhatsApp',
+        instagram:'Instagram',
+        loja:'Loja',
+        indicacao:'Indicação',
+        outro:'Outro'
+      })[v] || v;
+    }
 
-    function money(v){ return new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(Number(v||0)) }
-    function sourceLabel(v){ return ({whatsapp:'WhatsApp',instagram:'Instagram',loja:'Loja',indicacao:'Indicação',outro:'Outro'})[v] || v }
-    function esc(s){ return (s ?? '').toString().replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])) }
+    function esc(s){
+      return (s ?? '').toString().replace(/[&<>"']/g, m => ({
+        '&':'&amp;',
+        '<':'&lt;',
+        '>':'&gt;',
+        '"':'&quot;',
+        "'":'&#39;'
+      }[m]));
+    }
 
     function filtered(){
-      const q = els.search.value.trim().toLowerCase()
-      const src = els.filterSource.value
-      const ds = els.dateStart.value
-      const de = els.dateEnd.value
+      const q = els.search.value.trim().toLowerCase();
+      const src = els.filterSource.value;
+      const ds = els.dateStart.value;
+      const de = els.dateEnd.value;
+
       return leads.filter(l => {
-        const okQ = !q || l.customer_name.toLowerCase().includes(q) || (l.keyword||'').toLowerCase().includes(q)
-        const okS = src === 'all' || l.source === src
-        const okStart = !ds || l.lead_date >= ds
-        const okEnd = !de || l.lead_date <= de
-        return okQ && okS && okStart && okEnd
-      })
+        const okQ =
+          !q ||
+          (l.customer_name || '').toLowerCase().includes(q) ||
+          (l.keyword || '').toLowerCase().includes(q);
+
+        const okS = src === 'all' || l.source === src;
+        const okStart = !ds || l.lead_date >= ds;
+        const okEnd = !de || l.lead_date <= de;
+
+        return okQ && okS && okStart && okEnd;
+      });
     }
 
     function render(){
-      const data = filtered()
-      els.rows.innerHTML = data.map(l => `
-        <tr>
-          <td><strong>${esc(l.customer_name)}</strong></td>
-          <td>${esc(l.lead_date)}</td>
-          <td>${esc(sourceLabel(l.source))}</td>
-          <td>${esc(l.keyword || '—')}</td>
-          <td><span class="pill ${l.purchased ? 'yes' : 'no'}">${l.purchased ? 'Sim' : 'Não'}</span></td>
-          <td>${money(l.sale_value)}</td>
-          <td>${esc(l.notes || '—')}</td>
-        </tr>`).join('') || '<tr><td colspan="7" class="small">Nenhum lead encontrado.</td></tr>'
+      const data = filtered();
 
-      const totalLeads = data.length
-      const totalSales = data.filter(l => l.purchased).length
-      const totalRevenue = data.reduce((a,b) => a + Number(b.sale_value || 0), 0)
-      const conv = totalLeads ? ((totalSales / totalLeads) * 100).toFixed(1) : '0.0'
-      els.mLeads.textContent = totalLeads
-      els.mSales.textContent = totalSales
-      els.mRevenue.textContent = money(totalRevenue)
-      els.mConv.textContent = conv + '%'
+      els.rows.innerHTML =
+        data.map(l => `
+          <tr>
+            <td><strong>${esc(l.customer_name)}</strong></td>
+            <td>${esc(l.lead_date)}</td>
+            <td>${esc(sourceLabel(l.source))}</td>
+            <td>${esc(l.keyword || '—')}</td>
+            <td><span class="pill ${l.purchased ? 'yes' : 'no'}">${l.purchased ? 'Sim' : 'Não'}</span></td>
+            <td>${money(l.sale_value)}</td>
+            <td>${esc(l.notes || '—')}</td>
+          </tr>
+        `).join('') || '<tr><td colspan="7" class="small">Nenhum lead encontrado.</td></tr>';
+
+      const totalLeads = data.length;
+      const totalSales = data.filter(l => l.purchased).length;
+      const totalRevenue = data.reduce((a, b) => a + Number(b.sale_value || 0), 0);
+      const conv = totalLeads ? ((totalSales / totalLeads) * 100).toFixed(1) : '0.0';
+
+      els.mLeads.textContent = totalLeads;
+      els.mSales.textContent = totalSales;
+      els.mRevenue.textContent = money(totalRevenue);
+      els.mConv.textContent = conv + '%';
     }
 
     async function loadLeads(){
-        leads = [
-          {id:1, customer_name:'Maria Clara', lead_date:'2026-03-10', source:'whatsapp', keyword:'LOOK', purchased:true, sale_value:289.9, notes:'Veio do anúncio de coleção nova.'},
-          {id:2, customer_name:'Juliana Alves', lead_date:'2026-03-11', source:'instagram', keyword:'KITE', purchased:false, sale_value:0, notes:'Pediu fotos e ficou de voltar.'},
-          {id:3, customer_name:'Patrícia Melo', lead_date:'2026-03-12', source:'loja', keyword:'VITRINE', purchased:true, sale_value:420, notes:'Comprou presente + look festa.'},
-        ]
-        els.status.textContent = 'Modo demonstração ativo. Cole suas chaves do Supabase para gravar dados reais.'
-        render(); return
+      els.status.textContent = 'Carregando leads...';
+
+      const { data, error } = await supabase
+        .from('leads')
+        .select('*')
+        .order('created_at', { ascending: false });
+
+      if (error) {
+        els.status.textContent = 'Erro ao carregar leads: ' + error.message;
+        return;
       }
-      const { data, error } = await supabase.from('leads').select('*').order('created_at', { ascending: false })
-      if (error) { els.status.textContent = 'Erro ao carregar leads: ' + error.message; return }
-      leads = data || []
-      render()
+
+      leads = data || [];
+      els.status.textContent = '';
+      render();
     }
 
-    els.purchased.addEventListener('change', () => {
-      const bought = els.purchased.value === 'yes'
-      els.sale_value.disabled = !bought
-      if (!bought) els.sale_value.value = ''
-    })
+    function updateSaleValueState(){
+      const bought = els.purchased.value === 'yes';
+      els.sale_value.disabled = !bought;
 
-    ;[els.search, els.filterSource, els.dateStart, els.dateEnd].forEach(el => el.addEventListener('input', render))
+      if (!bought) {
+        els.sale_value.value = '';
+      }
+    }
+
+    els.purchased.addEventListener('change', updateSaleValueState);
+
+    [els.search, els.filterSource, els.dateStart, els.dateEnd].forEach(el => {
+      el.addEventListener('input', render);
+      el.addEventListener('change', render);
+    });
+
     els.clearFilters.addEventListener('click', () => {
-      els.search.value = ''
-      els.filterSource.value = 'all'
-      els.dateStart.value = ''
-      els.dateEnd.value = ''
-      render()
-    })
+      els.search.value = '';
+      els.filterSource.value = 'all';
+      els.dateStart.value = '';
+      els.dateEnd.value = '';
+      render();
+    });
 
     els.exportBtn.addEventListener('click', () => {
-      const data = filtered()
+      const data = filtered();
+
       const lines = [
         ['Nome','Data','Origem','Palavra','Comprou','Valor','Observações'],
-        ...data.map(l => [l.customer_name, l.lead_date, sourceLabel(l.source), l.keyword||'', l.purchased ? 'Sim' : 'Não', Number(l.sale_value||0).toFixed(2), l.notes||''])
-      ]
-      const csv = lines.map(r => r.map(v => `"${String(v).replaceAll('"','""')}"`).join(';')).join('\n')
-      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' })
-      const a = document.createElement('a')
-      a.href = URL.createObjectURL(blob)
-      a.download = 'leads-kite-kids.csv'
-      a.click()
-      URL.revokeObjectURL(a.href)
-    })
+        ...data.map(l => [
+          l.customer_name,
+          l.lead_date,
+          sourceLabel(l.source),
+          l.keyword || '',
+          l.purchased ? 'Sim' : 'Não',
+          Number(l.sale_value || 0).toFixed(2),
+          l.notes || ''
+        ])
+      ];
+
+      const csv = lines
+        .map(r => r.map(v => `"${String(v).replaceAll('"','""')}"`).join(';'))
+        .join('\n');
+
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'leads-kite-kids.csv';
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
 
     els.form.addEventListener('submit', async (e) => {
-      e.preventDefault()
-      els.saveBtn.disabled = true
-      els.status.textContent = 'Salvando...'
+      e.preventDefault();
+      els.saveBtn.disabled = true;
+      els.status.textContent = 'Salvando...';
 
       const payload = {
         customer_name: els.customer_name.value.trim(),
@@ -272,32 +419,46 @@
         source: els.source.value,
         keyword: els.keyword.value.trim(),
         purchased: els.purchased.value === 'yes',
-        sale_value: els.purchased.value === 'yes' ? Number(els.sale_value.value || 0) : 0,
+        sale_value: els.purchased.value === 'yes'
+          ? Number(els.sale_value.value || 0)
+          : 0,
         notes: els.notes.value.trim(),
-      }
+      };
 
       try {
-        if (!payload.customer_name) throw new Error('Preencha o nome da cliente.')
-          const { data, error } = await supabase.from('leads').insert(payload).select().single()
-          if (error) throw error
-          leads.unshift(data)
+        if (!payload.customer_name) {
+          throw new Error('Preencha o nome da cliente.');
         }
 
-        els.form.reset()
-        els.lead_date.value = new Date().toISOString().slice(0, 10)
-        els.source.value = 'whatsapp'
-        els.purchased.value = 'no'
-        els.sale_value.disabled = true
-        els.status.textContent = 'Lead salvo com sucesso.'
-        render()
-      } catch (err) {
-        els.status.textContent = 'Erro: ' + err.message
-      } finally {
-        els.saveBtn.disabled = false
-      }
-    })
+        const { data, error } = await supabase
+          .from('leads')
+          .insert(payload)
+          .select()
+          .single();
 
-    loadLeads()
+        if (error) {
+          throw error;
+        }
+
+        leads.unshift(data);
+
+        els.form.reset();
+        els.lead_date.value = new Date().toISOString().slice(0, 10);
+        els.source.value = 'whatsapp';
+        els.purchased.value = 'no';
+        updateSaleValueState();
+
+        els.status.textContent = 'Lead salvo com sucesso.';
+        render();
+      } catch (err) {
+        els.status.textContent = 'Erro: ' + err.message;
+      } finally {
+        els.saveBtn.disabled = false;
+      }
+    });
+
+    updateSaleValueState();
+    loadLeads();
   </script>
 </body>
 </html>
