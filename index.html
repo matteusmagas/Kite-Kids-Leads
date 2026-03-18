@@ -146,8 +146,7 @@
     const SUPABASE_URL = "https://qxjrsdzyaicisokgzhh.supabase.co";
     const SUPABASE_ANON_KEY = "sb_publishable_afVxjk13wkMiovhLgzHrbQ_WyXTqQxj"
 
-    const demoMode = SUPABASE_URL.includes("https://qxjrsdzyaicisokgzhh.supabase.co") || SUPABASE_ANON_KEY.includes("sb_publishable_afVxjk13wkMiovhLgzHrbQ_WyXTqQxj")
-    const supabase = !demoMode ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null
+    const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
 
     const els = {
       form: document.getElementById('leadForm'),
